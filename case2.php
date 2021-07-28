@@ -1,28 +1,26 @@
 <?php
-/** case */
-$product - [
-    ["name" => "Lenava", "qty" => 4, "price" => 1000000],
-    ["name" => "Aser", "qty" => 4, "price" => 1500000],
-    ["name" => "Toyiba", "qty" => 4, "price" => 2000000],
-    ["name" => "Doll", "qty" => 4, "price" => 1200000],
-    ["name" => "Susa", "qty" => 4, "price" => 1700000],
-];
-
-/** seecond case
+/**
  * buat fungsi untuk menghitung bilangan faktorial
- * faktorial (5) -> 5 * 4 * 3 * 2 * 1 - 20
+ * faktorial (5) -> 5* 4 * 3 * 2 * 1 = 120 
  */
 
-function faktorial ($x){
-    $angka = 1;
-    $faktorial = 1;
-    while ($angka <= $x){
-        $faktorial = $faktorial * $angka;
-        $angka = $angka + 1;
-    }
-    return $faktorial;
-}
-
-echo faktorial (5);
-
- ?>
+ /**
+  * fungsi -> void dan non-void
+  * void ->fungsi yg tdk mengembalikan value
+  * non-void -> fungsi yg mengembalikan value (return value)
+  * analogi -> ketua kelas meminta info tentang saldo kas
+  * fungsi hitungSaldo()-> return saldonya
+  * analogi -> ketua kelas meminta info tentang saldo kas
+  * fungsi narikKas()
+  */
+function faktorial ($number){
+	$result = 1;
+	 for($i=$number; $i >= 1 ; $i--){
+		 $result = $result * $i;
+	 }
+	  //return $fresult;
+	  echo "Faktorial of $number is $result";
+	}
+// echo "Faktorial of 10 is " . faktorial(10);
+echo faktorial(5);
+?>
